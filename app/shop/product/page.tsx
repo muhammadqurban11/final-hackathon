@@ -2,24 +2,19 @@ import ProductGridList from "@/components/product";
 import ProductDetails from "@/components/productpageMid";
 import Image from "next/image";
 import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa";
 
 const ProductPage = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl ">
       {/* Breadcrumb */}
       <div className="relative">
-        {/* <div className="zIndex-0">
-        <Image src='/Group 150.png' width='100' height='100' alt='group_image'/>
-      </div> */}
-        <div className="absolute top-0 right-0 border-2 bg-white">
-          <Image src='/Group 150.png' width='440' height='440' alt='group_image' />
-        </div>
         <nav className="text-sm text-gray-500 mb-4">
           <ol className="list-reset flex space-x-2">
             <li><Link href="/" className="hover:text-gray-800">Home</Link></li>
-            <li>/</li>
+            <li className="mt-1"><FaAngleRight /></li>
             <li><Link href="/shop" className="hover:text-gray-800">Shop</Link></li>
-            <li>/</li>
+            <li className="mt-1"><FaAngleRight /></li>
             <li className="text-gray-800">Asgaard Sofa</li>
           </ol>
         </nav>
@@ -32,26 +27,13 @@ const ProductPage = () => {
           {/* Thumbnails */}
           <div className="flex flex-col space-y-2 mr-4">
             {["sofa.png", "sofa_3.png", "sofa_4.png"].map((val, index) => (
-              <Image
-                key={index}
-                src={`/${val}`}
-                alt={`Thumbnail ${index + 1}`}
-                width={80}
-                height={80}
-                className="rounded-lg cursor-pointer border border-gray-300 hover:border-black"
-              />
+              <Image key={index} src={`/${val}`} alt={`Thumbnail ${index + 1}`} width={80} height={80} className="rounded-lg cursor-pointer border border-gray-300 hover:border-black" />
             ))}
           </div>
 
           {/* Main Image */}
           <div className="rounded-lg overflow-hidden">
-            <Image
-              src="/sofa.png"
-              alt="Asgaard Sofa"
-              width={800}
-              height={800}
-              className="w-full"
-            />
+            <Image src="/sofa.png" alt="Asgaard Sofa" width={800} height={800} className="w-full" />
           </div>
         </div>
         {/* Product Details */}
@@ -81,12 +63,7 @@ const ProductPage = () => {
             <h3 className="text-base font-medium mb-2">Size</h3>
             <div className="flex space-x-3">
               {["L", "XL", "XS"].map((size) => (
-                <button
-                  key={size}
-                  className="border border-gray-300 px-5 py-2 rounded-lg hover:border-black focus:ring-2 focus:ring-black"
-                >
-                  {size}
-                </button>
+                <button key={size} className="border border-gray-300 px-5 py-2 rounded-lg hover:border-black focus:ring-2 focus:ring-black">{size} </button>
               ))}
             </div>
           </div>
@@ -96,11 +73,7 @@ const ProductPage = () => {
             <h3 className="text-base font-medium mb-2">Color</h3>
             <div className="flex space-x-4">
               {["#000000", "#6B46C1", "#D69E2E"].map((color, index) => (
-                <div
-                  key={index}
-                  className="w-8 h-8 rounded-full cursor-pointer border-2 border-gray-300 hover:border-black"
-                  style={{ backgroundColor: color }}
-                ></div>
+                <div key={index} className="w-8 h-8 rounded-full cursor-pointer border-2 border-gray-300 hover:border-black" style={{ backgroundColor: color }}></div>
               ))}
             </div>
           </div>
@@ -115,9 +88,7 @@ const ProductPage = () => {
             </div>
 
             {/* Add to Cart Button */}
-            <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300">
-              Add To Cart
-            </button>
+            <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition duration-300">Add To Cart </button>
           </div>
 
           {/* Additional Info */}

@@ -6,10 +6,7 @@ const ProductGridList = () => {
     <div className="bg-white px-6 py-12">
       {/* Heading Section */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-semibold text-black">Top Picks For You</h2>
-        <p className="text-gray-500 mt-2">
-          Find a bright idea to suit your taste with our great selection of suspension, floor, and table lights.
-        </p>
+        <h2 className="text-3xl font-semibold text-black">Related Products</h2>
       </div>
 
       {/* Product Grid */}

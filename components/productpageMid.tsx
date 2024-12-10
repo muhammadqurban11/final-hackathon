@@ -46,12 +46,12 @@ const ProductDetails = () => {
       {/* Image Grid */}
       <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
         {/* Sofa Image 1 */}
-        <div className="bg-[#FBEBB5] rounded-lg overflow-hidden">
-          <Image src="/sofa.png" alt="Sofa 1" width={800} height={800} className="w-full object-cover" />
+        <div className="rounded-lg overflow-hidden">
+          <Image src="/product/img-01.png" alt="Sofa 1" width={800} height={800} className="w-full object-cover" />
         </div>
         {/* Sofa Image 2 */}
-        <div className="bg-[#FBEBB5] rounded-lg overflow-hidden">
-          <Image src="/sofa.png" alt="Sofa 2" width={800} height={800} className="w-full object-cover" />
+        <div className=" rounded-lg overflow-hidden">
+          <Image src="/product/img-01.png" alt="Sofa 2" width={800} height={800} className="w-full object-cover" />
         </div>
       </div>
     </div>

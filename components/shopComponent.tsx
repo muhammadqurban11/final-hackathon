@@ -26,12 +26,6 @@ function PaginationAndFeatures() {
             3
           </button>
           <button className="px-4 py-2 bg-yellow-50 text-black rounded-md">
-            4
-          </button>
-          <button className="px-4 py-2 bg-yellow-50 text-black rounded-md">
-            5
-          </button>
-          <button className="px-4 py-2 bg-yellow-50 text-black rounded-md">
             Next
           </button>
         </div>

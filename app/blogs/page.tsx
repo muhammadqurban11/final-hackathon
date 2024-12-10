@@ -3,34 +3,36 @@ import Image from "next/image";
 
 const BlogGrid = () => {
     return (
-        <div className="bg-white px-6 py-12">
+        <div className="bg-white">
             {/* Heading Section */}
-            <div className="text-center mb-8">
-                <h2 className="text-3xl font-semibold text-black">Our Blogs</h2>
-                <p className="text-gray-500 mt-2">Find a bright idea to suit your taste with our great selection </p>
+            <div className="relative w-full h-60 bg-cover bg-center mb-10" style={{ backgroundImage: 'url("/bg-shop.png")' }}>
+                <div className="absolute inset-0 bg-white bg-opacity-50 flex flex-col justify-center items-center">
+                    <Image src="/logo.png" alt="logo" width={100} height={100} className="h-[77px] w-[77px]" />
+                    <h2 className="text-3xl font-semibold text-black">Our Blogs</h2>
+                    <p className="text-sm text-black">Home &gt; Blogs</p>
+                </div>
             </div>
-
             {/* Blog Grid */}
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
                     {
                         id: 1,
                         title: "Going all-in with millennial design",
-                        image: "/blog1.png", // Replace with actual image paths
+                        image: "/blogs-material/img-01.png", // Replace with actual image paths
                         readTime: "5 min",
                         date: "12th Oct 2022",
                     },
                     {
                         id: 2,
-                        title: "Going all-in with millennial design",
-                        image: "/blog2.png", // Replace with actual image paths
+                        title: "Exploring new ways of decorating",
+                        image: "/blogs-material/img-02.png", // Replace with actual image paths
                         readTime: "5 min",
                         date: "12th Oct 2022",
                     },
                     {
                         id: 3,
-                        title: "Going all-in with millennial design",
-                        image: "/blog3.png", // Replace with actual image paths
+                        title: "Handmade pieces took time to make",
+                        image: "/blogs-material/img-03.png", // Replace with actual image paths
                         readTime: "5 min",
                         date: "12th Oct 2022",
                     },
